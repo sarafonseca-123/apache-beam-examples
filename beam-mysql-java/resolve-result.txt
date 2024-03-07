@@ -1,0 +1,60 @@
+org.apache.beam:beam-sdks-java-core:jar:2.54.0:compile -- module org.apache.beam.sdk [auto]
+org.apache.beam:beam-model-pipeline:jar:2.54.0:compile -- module org.apache.beam.model.pipeline [auto]
+org.apache.beam:beam-model-job-management:jar:2.54.0:compile -- module org.apache.beam.model.job.management [auto]
+org.apache.beam:beam-sdks-java-io-debezium:jar:2.54.0:compile -- module org.apache.beam.sdk.io.debezium [auto]
+org.apache.beam:beam-runners-direct-java:jar:2.54.0:runtime -- module org.apache.beam.runners.direct [auto]
+org.apache.beam:beam-vendor-grpc-1_60_1:jar:0.1:compile
+org.apache.beam:beam-vendor-guava-32_1_2-jre:jar:0.1:compile
+
+io.debezium:debezium-core:jar:2.5.2.Final:compile -- module debezium.core (auto)
+io.debezium:debezium-connector-mysql:jar:2.5.2.Final:compile -- module debezium.connector.mysql (auto)
+io.debezium:debezium-storage-kafka:jar:2.5.2.Final:compile -- module debezium.storage.kafka (auto)
+io.debezium:debezium-api:jar:2.5.2.Final:compile -- module debezium.api (auto)
+io.debezium:debezium-storage-file:jar:2.5.2.Final:compile -- module debezium.storage.file (auto)
+
+
+
+org.apache.kafka:connect-api:jar:2.5.0:compile -- module connect.api (auto)
+org.apache.kafka:kafka-clients:jar:2.5.0:compile -- module kafka.clients (auto)
+
+
+
+
+
+
+
+
+
+[INFO]    net.bytebuddy:byte-buddy:jar:1.12.14:compile -- module net.bytebuddy
+[INFO]    com.google.code.findbugs:jsr305:jar:3.0.2:compile -- module jsr305 (auto)
+[INFO]    com.google.errorprone:error_prone_annotations:jar:2.10.0:compile -- module com.google.errorprone.annotations [auto]
+[INFO]    com.fasterxml.jackson.core:jackson-core:jar:2.14.1:compile -- module com.fasterxml.jackson.core
+[INFO]    com.fasterxml.jackson.core:jackson-annotations:jar:2.14.1:compile -- module com.fasterxml.jackson.annotation
+[INFO]    com.fasterxml.jackson.core:jackson-databind:jar:2.14.1:compile -- module com.fasterxml.jackson.databind
+[INFO]    org.xerial.snappy:snappy-java:jar:1.1.10.4:compile -- module snappy.java (auto)
+[INFO]    joda-time:joda-time:jar:2.10.10:compile -- module org.joda.time [auto]
+[INFO]    com.google.auto.value:auto-value-annotations:jar:1.8.2:compile -- module auto.value.annotations (auto)
+[INFO]    org.apache.httpcomponents:httpclient:jar:4.5.13:compile -- module org.apache.httpcomponents.httpclient [auto]
+[INFO]    commons-logging:commons-logging:jar:1.2:compile -- module commons.logging (auto)
+[INFO]    commons-codec:commons-codec:jar:1.11:compile -- module org.apache.commons.codec [auto]
+[INFO]    org.apache.httpcomponents:httpcore:jar:4.4.15:compile -- module org.apache.httpcomponents.httpcore [auto]
+[INFO]    org.conscrypt:conscrypt-openjdk-uber:jar:2.5.2:compile -- module org.conscrypt [auto]
+[INFO]    org.checkerframework:checker-qual:jar:3.42.0:compile -- module org.checkerframework.checker.qual [auto]
+[INFO]    org.lz4:lz4-java:jar:1.7.1:compile -- module org.lz4.java [auto]
+[INFO]    javax.ws.rs:javax.ws.rs-api:jar:2.1.1:compile -- module java.ws.rs
+[INFO]    org.apache.kafka:connect-json:jar:2.5.0:compile -- module connect.json (auto)
+[INFO]    com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.10.2:compile -- module com.fasterxml.jackson.datatype.jdk8
+[INFO]    io.debezium:debezium-ddl-parser:jar:2.5.2.Final:compile -- module debezium.ddl.parser (auto)
+[INFO]    org.antlr:antlr4-runtime:jar:4.10.1:compile -- module org.antlr.antlr4.runtime [auto]
+[INFO]    com.zendesk:mysql-binlog-connector-java:jar:0.29.0:compile -- module mysql.binlog.connector.java (auto)
+[INFO]    com.github.luben:zstd-jni:jar:1.5.0-2:compile -- module com.github.luben.zstd_jni [auto]
+[INFO]    com.mysql:mysql-connector-j:jar:8.0.33:compile -- module mysql.connector.j (auto)
+[INFO]    org.mariadb.jdbc:mariadb-java-client:jar:3.2.0:compile -- module org.mariadb.jdbc
+[INFO]    com.github.waffle:waffle-jna:jar:3.2.0:compile -- module waffle.jna [auto]
+[INFO]    net.java.dev.jna:jna:jar:5.12.1:compile -- module com.sun.jna [auto]
+[INFO]    net.java.dev.jna:jna-platform:jar:5.12.1:compile -- module com.sun.jna.platform [auto]
+[INFO]    org.slf4j:jcl-over-slf4j:jar:1.7.36:compile -- module org.apache.commons.logging [auto]
+[INFO]    com.github.ben-manes.caffeine:caffeine:jar:2.9.3:compile -- module com.github.benmanes.caffeine [auto]
+[INFO]    com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile -- module com.fasterxml.jackson.datatype.jsr310
+[INFO]    org.slf4j:slf4j-api:jar:1.7.30:compile -- module org.slf4j [auto]
+[INFO]    org.slf4j:slf4j-jdk14:jar:1.7.30:compile -- module org.slf4j.jul [auto]

@@ -1,0 +1,14 @@
+mvn compile exec:java
+
+mvn dependency:resolve && mvn -o dependency:list
+
+docker run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+dentro do container: psql ALTER SYSTEM SET wal_level = logical;
+restart container
+
+https://stackoverflow.com/questions/67490668/changing-wal-level-on-postgresql-13-via-client-session-is-not-being-respecte
+
+CREATE TABLE accounts (user_id VARCHAR (50));
+
+INSERT INTO accounts("user_id") VALUES ('sara');
