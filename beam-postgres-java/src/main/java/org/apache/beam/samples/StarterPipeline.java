@@ -26,6 +26,7 @@ import org.apache.beam.io.debezium.DebeziumIO;
 import org.apache.beam.io.debezium.SourceRecordJson;
 import io.debezium.connector.postgresql.PostgresConnector;
 import org.apache.beam.io.debezium.KafkaSourceConsumerFn;
+import org.apache.beam.sdk.io.FileIO;
 
 import org.apache.beam.io.debezium.KafkaSourceConsumerFn.DebeziumSDFDatabaseHistory;
 
@@ -50,7 +51,8 @@ public class StarterPipeline {
                         .withConnectionProperty("plugin.name", "pgoutput"))
                 .withFormatFunction(new SourceRecordJson.SourceRecordJsonMapper())
                 .withMaxNumberOfRecords(30)
-                .withCoder(StringUtf8Coder.of()));
+                .withCoder(StringUtf8Coder.of()))
+          .apply(FileIO.writeDynamic());
 
     p.run().waitUntilFinish();
   }

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "beam-postgres-python"
+version = "0.1.0"
+description = "A Beam pipeline to process Postres CDC"
+authors = ["Sara Fonseca <fonsecassara@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+apache-beam = "2.58.0"
+
+#pip install "apache-beam[gcp]"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
